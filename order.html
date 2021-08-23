@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact us</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/6399a95e83.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="modal hidden"></div>
+
+    <div class="modal-content hidden">
+      <span class="close">&times;</span>
+
+      <h1>Don't Miss Out!</h1>
+      <p>
+        Keep up to date with our product launches, special offers and discounts.
+      </p>
+      <form action="#">
+        <input
+          type="email"
+          id="signup-email"
+          placeholder="Enter your email address"
+        />
+        <input type="submit" id="signup-btn" value="sign me up" />
+      </form>
+    </div>
+
+    <div class="header flex">
+      <div id="logo">Crumbs</div>
+      <nav class="main-nav">
+        <a href="index.html">home</a>
+        <a href="about.html">about</a>
+        <a href="order.html">custom order</a>
+        <a href="#">cart</a>
+        <a href="contact.html">contact us</a>
+        <a href="#" id="signup">sign up</a>
+      </nav>
+
+      <div class="mobile-nav-btn hidden">
+        <i class="fa fa-bars"></i>
+      </div>
+
+      <nav class="mobile-nav">
+        <a href="index.html">home</a>
+        <a href="about.html">about</a>
+        <a href="order.html">custom order</a>
+        <a href="#">cart</a>
+        <a href="contact.html">contact us</a>
+        <a href="#">sign up</a>
+      </nav>
+    </div>
+
+    <div class="order-heading">
+      <h1>Can't find what you're looking for?</h1>
+      <p>
+        Crumbs bakery is here to help! Simply let us know what you'd like and we
+        will happily oblige.
+      </p>
+    </div>
+
+    <div class="occasion flex">
+      <div class="occa-item">
+        <div class="occa-item-text">Birthday</div>
+        <div class="occa-item-subtext">
+          <p>Contact us at:</p>
+          <p>birthday@crumbs.com</p>
+        </div>
+      </div>
+
+      <!-- occasion item 2 -->
+
+      <div class="occa-item">
+        <div class="occa-item-text">Wedding</div>
+        <div class="occa-item-subtext">
+          <p>Contact us at:</p>
+          <p>wedding@crumbs.com</p>
+        </div>
+      </div>
+
+      <!-- occasion item 3 -->
+
+      <div class="occa-item">
+        <div class="occa-item-text">Other</div>
+        <div class="occa-item-subtext">
+          <p>Contact us at:</p>
+          <p>other-occs@crumbs.com</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
