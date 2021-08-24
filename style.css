@@ -292,7 +292,7 @@ footer {
 }
 
 .footer-icons {
-  width: 10%;
+  width: 14%;
   margin: auto;
   padding: 40px;
 }
@@ -302,7 +302,7 @@ footer {
   flex-direction: column;
   position: absolute;
   left: 0;
-  top: 13%;
+  top: 18%;
   width: 0;
   height: 0;
 }
@@ -426,6 +426,53 @@ footer {
   .order-heading {
     font-size: 14px;
   }
+
+  .contact-heading > h1 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 5%;
+  }
+
+  .contact-details {
+    font-size: 12px;
+  }
+
+  .contact-heading > p {
+    display: none;
+  }
+
+  [class^="fa"] {
+    font-size: 12px;
+    padding: 1%;
+  }
+
+  [class^="cont-"] > p {
+    font-size: 11px;
+    margin-left: 10%;
+  }
+
+  [class^="cont-"] {
+    display: flex;
+  }
+
+  #contact-submit {
+    width: 10%;
+    box-sizing: content-box;
+  }
+
+  .contact-details {
+    display: block;
+  }
+
+  .occasion {
+    display: block;
+    margin-bottom: 2%;
+  }
+
+  .occa-item {
+    margin-bottom: 2%;
+    margin-left: 20%;
+  }
 }
 
 /* ***** about us page *********/
@@ -443,14 +490,13 @@ footer {
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
 }
 
 .about-heading {
   position: absolute;
   right: 28%;
   top: 30%;
-  height: vh;
+  height: 12vh;
   width: 30%;
   background-color: rgba(233, 233, 233, 0.787);
   z-index: 2;
