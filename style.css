@@ -304,9 +304,7 @@ footer {
   flex-direction: column;
   position: absolute;
   left: 0;
-  top: 18%;
-  width: 0;
-  height: 0;
+  top: 10%;
 }
 
 .mobile-nav > a {
@@ -361,6 +359,10 @@ footer {
     display: none;
   }
 
+  /* .mobile-nav-container {
+    position: relative;
+  } */
+
   .mobile-nav-btn {
     display: block;
     margin-top: 2.5%;
@@ -376,13 +378,18 @@ footer {
   }
 
   .heading-text {
-    text-align: center;
+    width: 100%;
   }
 
   .heading-text > h1 {
     font-family: "Roboto Condensed", sans-serif;
     font-size: 25px;
     padding: 2% 0;
+    text-align: center;
+  }
+
+  .heading-text > p {
+    display: none;
   }
 
   .big-container {

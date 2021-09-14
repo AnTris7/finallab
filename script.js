@@ -1,11 +1,21 @@
 const buyBtns = document.querySelectorAll(".btn-buy");
 
 buyBtns.forEach(function (btn) {
-  btn.addEventListener("click", function (e) {
-    e.target.innerText = "Added to cart!";
-    e.target.style.width = "90%";
-  });
+  btn.addEventListener("click", addToCart);
 });
+
+function addToCart(e) {
+  let button = e.target;
+  button.innerText = "Added to cart!";
+  button.style.width = "90%";
+  let shopItem = button.parentElement.parentElement;
+  let itemName = shopItem.getElementsByClassName("item-label")[0].innerText;
+  let itemPrice = shopItem.getElementsByClassName("price")[0].innerText;
+  let imgSrc = shopItem.getElementsByClassName("image")[0].src;
+
+  console.log(itemName, itemPrice);
+  console.log(imgSrc);
+}
 
 const mobileNavIcon = document.querySelector(".mobile-nav-btn");
 
